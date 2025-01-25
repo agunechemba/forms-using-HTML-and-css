@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="reset"],
+    input[type="submit"] {
+      margin-left: 10px;
+    }
+  </style>    
+</head>
+<body>
+  <h1>Form Demo</h1>
+  <form>
+    <fieldset>
+      <legend>Text input</legend>
+      <div class="form-group">
+        <label for="myText">Text box</label>
+        <input type="text" id="myText" value="text here">
+      </div>
+      <div class="form-group">
+        <label for="myPwd">Password</label>
+        <input type="password" id="myPwd" value="secret">
+      </div>
+      <div class="form-group">
+        <label for="myTextArea">Text Area</label>
+        <textarea id="myTextArea" rows="3" cols="80">Your text here</textarea>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Selecting elements</legend>
+      <div class="form-group">
+        <label for="myList">Select List</label>
+        <select id="myList">
+          <option value="1">one</option>
+          <option value="2">two</option>
+          <option value="3">three</option>
+          <option value="4">four</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Check boxes</label>
+        <input type="checkbox" id="chkEggs" value="greenEggs">
+        <label for="chkEggs">Green Eggs</label>
+        <input type="checkbox" id="chkHam" value="ham">
+        <label for="chkHam">Ham</label>
+      </div>
+      <div class="form-group">
+        <label>Radio buttons</label>
+        <input type="radio" name="radSize" id="sizeSmall" value="small" checked>
+        <label for="sizeSmall">small</label>
+        <input type="radio" name="radSize" id="sizeMed" value="medium">
+        <label for="sizeMed">medium</label>
+        <input type="radio" name="radSize" id="sizeLarge" value="large">
+        <label for="sizeLarge">large</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Buttons</legend>
+      <div class="form-group">
+        <button type="button" onclick = "alert ('Good boy')">Standard button</button>
+        <input type="button" value="Input button">
+        <input type="reset">
+        <input type="submit">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+<!--The code above is an HTML form. HTML forms are used to collect data from users. In this example, the form has four sections:
+
+Text input
+Selecting elements
+Buttons
+The Text input section has three fields: a text box, a password field, and a text area. The text box allows the user to enter a single line of text, the password field allows the user to enter a password, and the text area allows the user to enter multiple lines of text.
+
+The Selecting elements section has three fields: a select list, a checkbox, and a radio button. The select list allows the user to select one option from a list, the checkbox allows the user to select multiple options, and the radio button allows the user to select only one option.
+
+The Buttons section has three buttons: a standard button, an input button, a reset button, and a submit button. The standard button is a generic button that can be used for any purpose. The input button is used to submit the form data to the server. The reset button clears all of the form data. The submit button submits the form data to the server and performs an action, such as logging the user in or sending an email.
+
+The code above is a simple example of an HTML form. There are many other types of forms that can be created using HTML. For more information, you can consult a web development tutorial or book.
+
+Here are some additional tips for creating HTML forms:
+
+Use labels to identify each form field. This will help users understand what information is being requested.
+Use placeholder text to give users a hint about what should be entered in each form field.
+Validate form data to ensure that it is entered correctly. This will help prevent errors.
+Use CSS to style your forms to make them look attractive and user-friendly.-->
